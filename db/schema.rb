@@ -15,8 +15,7 @@ ActiveRecord::Schema.define(version: 2020_10_20_005024) do
   create_table "mushrooms", force: :cascade do |t|
     t.string "name"
     t.string "scientific_name"
-    t.boolean "deadly"
-    t.boolean "psychedelic"
+    t.string "effect"
     t.text "img_url"
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
