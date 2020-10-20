@@ -3,8 +3,7 @@ class CreateMushrooms < ActiveRecord::Migration[6.0]
     create_table :mushrooms do |t|
       t.string :name
       t.string :scientific_name
-      t.boolean :deadly
-      t.boolean :psychedelic
+      t.string :effect
       t.text :img_url
       t.references :user, null: false, foreign_key: true
 

@@ -9,5 +9,12 @@ class MushroomsController < ApplicationController
         @mushroom = Mushroom.find(params[:id])
         render json: @mushroom
     end
+    
+    def random
+        @mushroom = Mushroom.all.sample(3)
+        render json: @mushroom 
+    end
+
+
 
 end
